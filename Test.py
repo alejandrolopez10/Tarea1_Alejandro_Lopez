@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[18]:
 
-
-from Tarea1 import *
-print ("Este programa testea todas las funciones de Tarea1.py")
+from funciones import *
+print ("Este programa testea todas las funciones de funciones.py")
 
 print ("\\nPara la funcion factorial obtenemos que 9! es: ", factorial (9))
 
@@ -19,7 +17,7 @@ monedaA()
 monedaB()
 
 
-# In[ ]:
+
 
 
 
