@@ -11,7 +11,7 @@ def factorial(n=int):
     for i in range (1,n,1):
         mult=mult*(i+1)
         i=mult
-    return mult
+    return int(mult)
 
 
 #-------------Funcion Binomial
@@ -21,7 +21,7 @@ def binomial(n=int,k=int):
     
     #Hacemos esto con la ayuda de la funcion binomial(n,k)
     
-    return factorial(n)/(factorial(k)*factorial(n-k)) 
+    return int(factorial(n)/(factorial(k)*factorial(n-k)) )
 
 
 #-------------Triangulo de Pascal
@@ -41,7 +41,7 @@ def pascal(n=int):
             
             lista.append(binomial(i,t))
             
-        print (lista,end="\n")    #Imprimimos la lista
+        print ((n-t)*" ",str(lista),end="\n")    #Imprimimos la lista
         
         a=str(lista)+"\n"         #convertimos los elementos de la lista en strings para poder copiarlos a un .txt
         
@@ -62,9 +62,7 @@ def monedaA(n=100,k=10):
 
 def monedaB(n=100,k=30):
     b=binomial(n,k)/(2**n)
-    print ("la probabilidad de que caiga cara 30 veces es: ",b)    
-    
-    
+    print ("la probabilidad de que caiga cara 30 veces es: ",b)   
 
 
 
